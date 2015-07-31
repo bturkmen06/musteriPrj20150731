@@ -22,6 +22,9 @@ public class GirisDAOTest {
         try {
             Giris giris = new Giris();
             
+            giris.setKullanici("admin");
+            giris.setSifre("admin");
+            
             boolean sonuc = GirisDAO.giriseYetkilimi(giris);
             
             

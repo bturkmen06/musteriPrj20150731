@@ -22,7 +22,7 @@ public class GirisDAO {
         String vtSifre = null;
         
         Connection conn = VTBaglanti.baglantiGetir();
-        PreparedStatement ps = conn.prepareStatement("seelct sifre from kullanici where kullanici=?");
+        PreparedStatement ps = conn.prepareStatement("select sifre from giris where kullanici=?");
         ps.setString(1, p_giris.getKullanici());
         
         ResultSet rs = ps.executeQuery();
